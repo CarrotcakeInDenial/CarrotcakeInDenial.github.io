@@ -97,7 +97,7 @@
 <body>
 
     <header>
-        <h1>Your Name</h1>
+        <h1>Daniel Chang</h1>
         <p>Electrical Engineer | Software Developer | Innovator</p>
     </header>
 
@@ -109,30 +109,49 @@
 
     <div class="container">
         <section id="about" class="about">
-            <h2 class="section-title">About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
-            <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+            <h2 class="section-title">What am I trying to achieve?</h2>
+            <p>"Building Hardware for those who are really serious about Software"</p>
+        
         </section>
 
         <section id="projects" class="projects">
             <h2 class="section-title">Projects</h2>
             <article>
-                <h3>Project 1</h3>
-                <p>Brief description of the project. This could include the technologies used, the problem it solves, and your role in it.</p>
-                <img src="project1.jpg" alt="Project 1 Image">
+                <h3>RISC-V Processor Design</h3>
+                <p>● Developed a three-stage RISC-V CPU with instruction decoding, ALU, and synchronous memory integration</p>
+
+                <p>● Used Verilog, System Verilog, and Synopsys tools for comprehensive testing of the pipelined design that can handle Data and Control Hazards accompanied by adding stalling and forwarding logic appropriately</p>
+                    
+                <p>● Designed a 4kiB direct-mapped, write-back cache in a Finite State Machine structure. It borrows the Skywater 130nm SRAM library thus the design can be fabricated. The final design was validated during the place-and-route via Innovus GUI, achieving a 2.04x performance improvement in cycle count benchmarks.</p>
+                    
+                <p>● The Critical Path was 42.685 ns and the Slack was 2.315 ns with the Clock Period configured as 45 ns with an operating frequency of 22.2 MHz. The Floor plan area was approximately 1093419 um^2 with a total power consumption of 6mW.</p>
+
+                <a href="pdfs/RISC-V_Project_Report.pdf" target="_blank">For the Full Project Report</a>
+                
             </article>
 
             <article>
-                <h3>Project 2</h3>
-                <p>Brief description of the project. This could include the technologies used, the problem it solves, and your role in it.</p>
-                <img src="project2.jpg" alt="Project 2 Image">
+                <h3>Hammer Place-and-Route: Top-Down Hierarchical Flow</h3>
+                <p>● Implemented the Top-Down Hierarchical Flow of Hammer(Highly Agile Masks Made Effortlessly from RTL), a framework for building physical chip design generators for digital VLSI flows. Configuring from the Top level to the partition level, it automatically runs corresponding Innovus commands for the given set of dependencies of the design</p>
+
+                <p>● Translated the hierarchical design structure into Innovus TCL commands, and then automated the process of running the design in a Top-Down flow in Python</p>
+
+                <p>● Now finalizing the implementation of early rail analysis, a feature that performs power analysis with rough routing at the early stage of the design using inputs such as power mesh density</p>
+                <a href="pdfs/Hammer_Project_Report.pdf" target="_blank">For the Full Project Report</a>
             </article>
 
             <!-- Add more projects as needed -->
         </section>
 
         <section id="contact" class="contact">
-            <h2 class="section-title">Contact</h2>
+            <div class="contact-section">
+                <h2>Contact Information</h2>
+                <p><strong>Email:</strong> <a href="mailto:daniel_chang@berkeley.edu">daniel_chang@berkeley.edu</a></p>
+                <p><strong>Mobile:</strong> <a href="tel:+1 9493378262">+1 9493378262</a></p>
+                <p><strong>Location:</strong> Berkeley, CA</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/daniel-chang-553140161/" target="_blank">LinkedIn Profile</a></p>
+            </div>
+<!--             <h2 class="section-title">Contact</h2>
             <form action="mailto:your.email@example.com" method="POST" enctype="text/plain">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -144,7 +163,7 @@
                 <textarea id="message" name="message" rows="5" required></textarea>
 
                 <button type="submit">Send Message</button>
-            </form>
+            </form> -->
         </section>
     </div>
 
